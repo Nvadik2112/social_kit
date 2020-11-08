@@ -1,0 +1,133 @@
+@font-face 
+    font-family: Netflix Sans Light
+    src: url('../fonts/Netflix Sans Light.otf')
+
+@font-face 
+    font-family: Netflix Sans Medium
+    src: url('../fonts/Netflix Sans Medium.otf')
+    
+.profile
+    font-family: Netflix Sans Light
+    width: 320px
+    height: 294px
+    background-color: #191A1D
+    border-radius: 20px
+    color: white       
+    animation: backInDown
+    animation-duration: 1s 
+    &-header
+        padding: 16px 16px 0px 16px
+        display: flex
+        justify-content: space-between
+        position: relative                
+        &__pic
+            position: relative
+            overflow: hidden
+            background: #fff
+            width: 80px
+            height: 80px
+            border-radius: 50%
+            -moz-border-radius: 50%
+            -webkit-border-radius: 50%
+            -khtml-border-radius: 50%
+            box-shadow: 6px 4px 30px rgba( 255,255,255, 0.2 )
+            animation: backInLeft
+            animation-duration: 1s            
+            & img                
+                position: absolute               
+                width: 100%
+            &-shadow
+                position: absolute
+                box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25)
+                width: 80px
+                height: 80px
+                z-index: 10              
+        &__block
+            display: flex
+            flex-direction: column
+            animation: bounceInRight
+            animation-duration: 1s          
+        &__items
+            display: flex
+            justify-content: space-between
+            margin-top: 8px
+            margin-right: 11px
+            margin-left: 11px
+            width: 170px
+            height: 36px             
+        &__item
+            display: flex
+            flex-direction: column
+            align-items: center                  
+            & h1
+                font-family: Netflix Sans Medium 
+                margin: 0
+                font:
+                    size: 16px
+                    weight: 400
+                line-height: 20px
+            & h2
+                margin: 0
+                font:
+                    size: 12px
+                    weight: 400
+                line-height: 15px
+                opacity: 0.6
+        &__buttons
+            display: flex
+            justify-content: space-between
+            margin-top: 8px
+            width: 192px
+            white-space: nowrap
+            & img
+                position: absolute
+                z-index: 20
+                color: white
+    &-main
+        padding: 16px 16px 0px 16px
+        height: 166px
+        position: relative
+        animation: fadeInUp
+        animation-duration: 1s 
+        & a 
+            color: #5458F7
+            text-decoration: none
+            font-size: 12px
+            line-height: 17px
+            &:hover
+                color: #8b00ff
+                transition: all 0.2s
+                -webkit-transition: all 0.2s
+                -moz-transition: all 0.2s
+                -ms-transition: all 0.2s                
+        &__name
+            margin: 0
+            height: 26px
+            font:
+                size: 20px
+                family: Netflix Sans Medium
+                weight: 400
+            line-height: 26px    
+        &__profession
+            margin: 0
+            opacity: 0.6
+            font:
+                size: 14px
+                weight: 400
+            line-height: 18px
+        &__text
+            padding: 8px 0 0 0            
+            & p
+                font-size: 12px
+                line-height: 17px
+                margin: 0px                           
+        &__site                 
+            font-weight: 600            
+            position: absolute
+            bottom: 0           
+
+    
+    
+
+            
+                  
